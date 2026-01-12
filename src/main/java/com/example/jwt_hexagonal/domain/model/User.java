@@ -22,15 +22,4 @@ public class User {
 
     private boolean enabled = true;
 
-
-    public static User create(String email, String encodedPassword) {
-        return new User(
-                UUID.randomUUID(),
-                email,
-                encodedPassword,
-                Role.CUSTOMER,
-                true
-        );
-    }
-
 }
